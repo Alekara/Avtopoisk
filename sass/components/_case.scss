@@ -1,0 +1,134 @@
+.case {
+  // margin-bottom: $section-margin-bottom;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 100px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  &--1 {
+    justify-content: flex-end;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__description {
+    width: 45%;
+    padding: 0 40px;
+    margin-left: 105px;
+  }
+
+  &__description--1 {
+    margin-right: 135px;
+    margin-left: 0;
+  }
+
+  &__text {
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    padding-left: 30px;
+    list-style: none;
+  }
+
+  &__item {
+    padding-left: 15px;
+    position: relative;
+  }
+
+  &__item::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    height: 4px;
+    width: 16px;
+    background-color: $color-red;
+  }  
+}
+
+@media (max-width: 1375px) {
+  .case {
+    flex-direction: column;
+
+    &:nth-child(2n) &__description {
+      order: 1;
+      margin-right: 0;
+    }
+
+    &__description {
+      width: 80%;
+      margin-left: auto;
+    }
+
+    &__photo {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .case {
+    flex-direction: column;
+    padding-bottom: 80px;   
+
+    &:nth-child(2n) &__description {
+      order: 1;
+      margin-right: 0;
+    }
+
+    &__description {
+      width: 80%;
+      margin-left: auto;
+    }
+
+    &__photo {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .case {
+    padding-bottom: 60px;
+    
+    &__description {
+      width: 90%;
+      margin-right: auto;
+    }
+
+    &:nth-child(2n) &__description {
+      margin-right: auto;
+    }
+
+    &__photo {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .case {
+    &__description {
+      width: 96%;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+
+    &:nth-child(2n) &__description {
+      margin-right: auto;
+    }
+  }
+}

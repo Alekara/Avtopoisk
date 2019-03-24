@@ -1,0 +1,81 @@
+//@font-face {
+//  font-family: "Oswald";
+//  src: url('fonts/Oswald-Regular.ttf') format('truetype');
+//  font-style: normal;
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  font-family: "Oswald";
+//  src: url('fonts/Oswald-Medium.ttf') format('truetype');
+//  font-style: normal;
+//  font-weight: 500;
+//}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  // position: relative;
+  // overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body, p, ul, li, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: 2000px) {
+  .container {
+    max-width: 2400px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

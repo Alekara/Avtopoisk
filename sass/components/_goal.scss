@@ -1,0 +1,18 @@
+.goal {
+  padding-top: $section-padding-top;
+  padding-left: 6%;
+  padding-right: 6%;
+
+  &__table {
+    border-collapse: collapse;
+    
+  }
+}
+
+@media (max-width: 1375px) {
+  .goal {
+    padding-top: $section-padding-top-small;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}

@@ -1,0 +1,90 @@
+.form {
+  width: 404px;
+  margin-top: 132px;
+
+  &__group {
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    width: 404px;
+    padding: 21px 92px 17px;
+    display: block;
+    border-radius: 39.5px;
+    border: none;
+  }
+
+  &__input:focus {
+    outline: none;
+    border: 1px solid $color-red;
+  }
+
+  &__input--name {
+    background: url(../img/profile.svg) no-repeat 45px center, #fff;
+  }
+
+  &__input--tel {
+    background: url(../img/phone.svg) no-repeat 45px center, #fff;
+  }
+
+  &__input::placeholder {
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    color: rgba(52, 52, 52, 0.5);
+  }
+
+  &__group:last-of-type {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 1239px) {
+  .form {
+    &__input {
+      width: 370px;
+      padding: 21px 92px 17px;
+    }
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .form {
+    margin: 0 auto;
+    margin-top: 82px;
+
+    &__input {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 585px) {
+  .form {
+    width: 100%;
+    margin-top: 50px;
+
+    &__input {
+      width: 100%;
+      padding-left: 62px;
+      padding-right: 62px;
+      display: block;      
+    }
+
+    &__input::placeholder {
+      font-size: 14px;
+    }
+
+    &__input--name {
+      background: url(../img/profile.svg) no-repeat 25px center, #fff;
+    }
+  
+    &__input--tel {
+      background: url(../img/phone.svg) no-repeat 25px center, #fff;
+    }
+  }
+}

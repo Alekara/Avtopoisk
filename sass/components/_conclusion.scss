@@ -1,0 +1,56 @@
+.conclusion {
+  min-height: 263px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/auto.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  // display: none;
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: normal;
+    font-weight: 900;
+  }
+
+  &__text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1375px) {
+  .conclusion {
+    &__title {
+      font-size: 40px;
+    }
+  
+    &__text {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .conclusion {
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .conclusion {
+  
+    &__text {
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

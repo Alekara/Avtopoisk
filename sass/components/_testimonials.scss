@@ -1,0 +1,134 @@
+.testimonials {
+  padding-top: $section-padding-top;
+
+  &__heading {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    margin: 0 auto 50px;
+    list-style: none;
+  }
+
+  &__item {
+    width: 1000px;
+    height: 600px;
+    padding: 55px 46px;
+    margin: 0 auto;
+    flex-shrink: 0;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.18);
+    border-radius: 44px;
+    display: none;
+  }
+
+  &__item:first-child {
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__navigation {
+    width: 196px;
+    margin: 0 auto;
+  }
+
+  &__navigation--left,
+  &__navigation--right {
+    width: 86px;
+    height: 20px;
+    border: none;
+  }
+
+  &__navigation--left {    
+    background: url(../img/arrow-left.svg) no-repeat center center;
+    margin-right: 16px;
+  }
+
+  &__navigation--right {
+    background: url(../img/arrow-right.svg) no-repeat center center;
+  }
+
+  &__button {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1375px) {
+  .testimonials {
+    &__item {
+      width: 900px;
+      height: 650px;
+      padding: 55px 46px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .testimonials {
+    padding-top: $section-padding-top-small;
+
+    &__heading {
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      width: 730px;
+      padding: 55px 46px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .testimonials {
+    &__navigation {
+      display: none;
+    }
+
+    &__list {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__item {
+      width: 100%;
+      height: auto;
+      margin-bottom: 25px;
+    }
+
+    &__button {
+      display: block;
+      border: none;
+      margin: 0 auto;
+      background: transparent;
+      color: $color-red;
+      font-size: 18px;
+      line-height: normal;
+      text-decoration: underline;
+    }
+
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    &__item {
+      padding: 45px 36px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonials {
+    &__list {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+  }
+}

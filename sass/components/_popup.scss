@@ -1,0 +1,57 @@
+.popup {
+  width: 748px;
+  padding: 40px 83px 40px 234px;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: calc(50% - 389px);
+  left: calc(50% - 374px);
+  z-index: 1000;
+  background: url(../img/popup-side.jpg) no-repeat left top, #fff;
+  border: 1px solid black;
+
+  &__title {
+    margin-bottom: 46px;
+  }
+
+  &__title--2,
+  &__title--3 {
+    display: none;
+  }
+
+  &__bold {
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 0;
+  }
+
+  &__group {
+    margin-bottom: 20px;
+  }
+
+  &__group:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    border: 1px solid #343434;
+  }
+
+  &__btn {
+    margin-bottom: 46px;
+  }
+
+  &__tels {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  &__time {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

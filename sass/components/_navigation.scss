@@ -1,0 +1,179 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -115px;
+    //спорное решение, надо еще подумать
+  
+    &__logo {
+      margin-top: 37px;
+      margin-left: 76px;
+    }
+
+  &__list {
+    min-width: 1000px;
+    margin-top: 25px;
+    margin-left: 46px;
+    margin-right: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $color-red;
+  }
+}
+
+@media (min-width: 2000px) {
+  .navigation {
+    max-width: 2200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+
+    // &__logo {
+    //   margin-left: 8%;
+    // }
+
+    &__list {
+      margin-left: 30%;
+    }
+  }
+
+
+}
+
+
+@media (max-width: 1375px) {
+  .navigation {
+    width: 340px;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(29, 28, 28, 0.95);
+    transition: all .6s ease-out;
+    z-index: 500;
+    
+    &--hidden {
+      height: 160px;
+      width: 80px;
+      background: rgba(100, 100, 100, 0);
+    }
+
+    &__logo {
+      // margin-top: 0;
+      margin-left: 0;
+      margin-bottom: 60px;
+    }
+
+    &__logo--hidden {
+      display: none;
+    }
+    
+    &__list {    
+      flex-direction: column;
+      min-width: 300px;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      transition: all .5s ease-out;
+
+      
+      &--hidden {
+        display: none;
+      }
+    }
+    
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    
+    &__toggle {
+      width: 65px;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+        top: 30px;
+        left: 50px;
+        z-index: 1000;
+      border: none;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+      box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
+      transition: all .5s ease-out;
+      
+      &--menu-opened {        
+        transform: translateX(190px)
+      }
+    }
+    
+    &__toggle:focus {
+      outline: none;
+    }
+    
+    &__icon {
+      position: relative;      
+
+      &, &::before, &::after {
+        width: 30px;
+        height: 2px;
+        background-color: rgba(29, 28, 28, 0.9);
+        display: inline-block;
+      }
+
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+      }
+
+      &::before {
+        top: -10px;        
+      }
+
+      &::after {
+        top: 10px;
+      }
+      
+      &--cross {
+        background-color: transparent;
+      }
+      
+      &--cross::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+        
+      &--cross::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+    }
+  }  
+}
+
+@media (max-width: 1375px) {
+  .navigation {
+    &__item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

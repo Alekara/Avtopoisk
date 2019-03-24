@@ -1,0 +1,242 @@
+.main-screen {
+  height: 100vh;
+  padding-left: 88px;
+  // margin-bottom: $section-margin-bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(29, 28, 28, .8) 34%, transparent 34%),
+    url(../img/main-screen.jpg) no-repeat 65% bottom;
+  background-size: cover;
+  color: #FFFFFF;
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__sub {
+    margin-top: 50px;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    order: -1;
+  }
+
+  &__list {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    padding-left: 78px;
+    margin-bottom: 24px;
+    position: relative;
+    font-size: inherit;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    list-style: none;
+  }
+
+  &__item::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+    height: 4px;
+    width: 26px;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  &__item:hover::before {
+    background-color: $color-red;
+  }
+
+  &__button {
+    width: 370px;
+    height: 44px;
+    border-radius: 22px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    background: #211F1F;
+    color: #fff;
+    font: inherit;
+    font-weight: 900;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    border: 2px solid $color-red;
+    transition: all .5s ease;
+  }
+
+  &__button:hover {
+    transform: scale(1.03);
+  }
+
+  &__focus {
+    color: $color-red;
+  }
+
+  &__br {
+    display: none;
+  }
+}
+
+@media (max-width: 1375px) {
+  .main-screen {
+    padding-left: 70px;
+
+    &__title {
+      font-size: 84px;
+      letter-spacing: 0.15em;
+    }
+
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-screen {
+    min-height: 700px;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: linear-gradient(to right, rgba(29, 28, 28, .7), rgba(29, 28, 28, .8)),
+    url(../img/main-screen-small.jpg) no-repeat 90% bottom;
+    
+    &__title {
+      font-size: 64px;
+      letter-spacing: 0.12em;
+    }
+
+    &__sub {
+      margin-top: 0;
+      font-size: 20px;
+      letter-spacing: 0.12em;
+    }
+
+    &__item {
+      padding-left: 60px;
+      margin-bottom: 24px;
+    }
+
+  }
+}
+
+@media (max-width: 767px) {
+  .main-screen {
+    // // height: 100vh;
+    // padding-left: 20px;
+    // padding-right: 20px;
+
+    &__title {
+      font-size: 44px;
+      letter-spacing: 0.08em;
+      text-align: center;
+    }
+
+    &__sub {
+    //   font-size: 16px;
+      text-align: center;
+    //   order: 0;
+      margin-bottom: 10px;
+    }
+
+    &__list {
+      margin: 0 auto 40px;
+    }
+
+    &__item {
+      letter-spacing: 0.08em;
+      padding-left: 40px;
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      width: 330px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .main-screen {
+    &__title {
+      font-size: 38px;
+    }
+
+    &__sub {
+      font-size: 22px;
+      margin: 0 auto 8px;
+    }
+
+    &__br {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .main-screen {
+    // height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__title {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    &__sub {
+      font-size: 22px;
+      letter-spacing: 0.08em;
+      // order: 0;
+    }
+
+    &__list {
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      padding-left: 30px;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    &__item::before {
+      top: 8px;
+      width: 16px;
+    }
+
+    &__button {
+      width: 275px;
+      font-size: 14px;
+    }
+
+  }
+}
+
+@media (max-width: 362px) {
+  .main-screen {
+    min-height: 560px;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__sub {
+      font-size: 19px;
+    }
+
+    &__button {
+      width: 270px;
+      font-size: 13px;
+    }
+  }
+}

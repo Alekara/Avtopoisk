@@ -1,0 +1,258 @@
+.contacts {
+  padding-top: $section-padding-top;
+
+  &__heading {
+    padding-bottom: 80px;
+    line-height: 49px;
+  }
+
+  &__body {
+    margin: 0 auto;
+    padding: 70px 9%;
+    display: flex;
+    justify-content: space-between;
+    background: url(../img/road.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 18px;
+    line-height: 33px;
+  }  
+
+  &__left {
+    width: 684px;    
+  }
+
+  &__header {
+    margin-bottom: 132px;
+    font-size: 48px;
+    line-height: 66px;
+    font-weight: 900;
+  }
+
+  &__right {
+    width: 527px;
+    margin-top: 98px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__sub {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+  }
+
+  &__tels {
+    width: 260px;
+    margin-bottom: 30px;
+    margin-right: 58px;
+  }
+
+  &__time {
+    width: 164px;
+    margin-bottom: 30px;
+    text-align: right;
+  }
+
+  &__erip {
+    margin-bottom: 50px;
+    text-align: right;
+  }
+
+  &__btn {
+    padding: 14px 24px 13px;
+    margin-left: auto;
+    background-color: #D10000;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 38px;
+    border: none;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__btn--pay {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1375px) {
+  .contacts {
+
+    &__body {
+      padding: 70px 7%;
+      background-position: center center;
+    } 
+    
+    &__left {
+      width: 550px;    
+    }
+
+    &__right {
+      margin-top: 86px;
+      align-items: flex-end;
+    }
+  
+    &__header {
+      font-size: 44px;
+      line-height: 60px;
+    }
+
+    &__tels {
+      margin-right: 0;
+      text-align: right;
+    }
+
+    &__time {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media (max-width: 1239px) {
+  .contacts {
+    &__header {
+      font-size: 40px;
+      line-height: 58px;
+    }
+
+    &__sub {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    &__right {
+      // margin-top: 0;
+    }
+    
+  }
+}
+
+@media (max-width: 1023px) {
+  .contacts {
+    padding-top: $section-padding-top-small;
+
+    &__heading {
+      padding-bottom: 50px;
+    }
+
+    &__header {
+      display: block;
+      margin-bottom: 82px;
+      text-align: center;
+    }
+    &__body {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      flex-direction: column;
+      background: transparent;
+    }
+
+    &__left {
+      width: 100%;
+      padding: 70px 7%;
+      background: url(../img/road.jpg) no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &__right {
+      width: 100%;
+      padding: 70px 7%;
+      margin-top: 0;
+      align-items: center;
+      justify-content: center;
+      background: #383838;
+    }
+
+    &__sub {
+    //   width: 100%;
+    //   margin-bottom: 30px;
+      text-align: center;
+    //   font-size: 24px;
+    //   line-height: 33px;
+    //   font-weight: 700;
+    }
+  
+    &__tels {
+      width: 45%;
+    //   margin-bottom: 30px;
+    //   margin-right: 58px;
+      text-align: center;
+    }
+  
+    &__time {
+      width: 45%;
+    //   margin-bottom: 30px;
+    //   text-align: right;
+      text-align: center;
+    }
+  
+    &__erip {
+      width: 74%;
+    //   margin-bottom: 50px;
+    //   text-align: right;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .contacts {
+    &__right {
+      padding: 50px 5%;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 585px) {
+  .contacts {
+    &__heading {
+      padding-bottom: 40px;
+    }
+
+    &__header {
+      margin-bottom: 52px;
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    &__right {
+      padding: 50px 3%;
+      flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+    }
+
+    &__tels,
+    &__time,
+    &__erip {
+      width: 90%;
+      margin-right: 0;
+    }
+
+    &__time {
+      margin-left: 0;
+    }
+
+    // &__btn {
+    //   width: 90%;
+    // }
+  }
+}

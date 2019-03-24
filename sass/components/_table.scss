@@ -1,0 +1,198 @@
+.table {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__cell {
+    width: 25%;
+    padding: 43px 10px;
+    border: 1px solid transparent;    
+  }
+
+  &__cell:nth-child(4n - 3) {
+    border-right: 1px solid $color-red;
+    text-align: left;
+  }
+  
+  &__main-text--big {
+    font-size: 64px;
+  }
+  
+  &__sub-text {
+    padding-top: 188px;
+    font-size: 36px;
+    line-height: 49px; 
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  &__sub-text--side {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-top: 0;
+  }
+  
+  &__sub-text--time {
+    background: url(../img/icon-clock.svg) no-repeat center 67px;
+  }
+  
+  &__sub-text--money {
+    background: url(../img/icon-dollar.svg) no-repeat center 67px;
+  }
+  
+  &__sub-text--nerves {
+    background: url(../img/icon-face.svg) no-repeat center 67px;
+  }
+  
+  &__main-text {
+    color: $color-red;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: normal;
+  }
+  
+  &__text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1375px) {
+  .table {  
+    &__main-text--big {
+      font-size: 50px;
+    }
+  
+    &__sub-text {
+      padding-top: 148px;
+      font-size: 28px;
+      line-height: 40px; 
+    }
+
+    &__sub-text--time {
+      background: url(../img/icon-clock.svg) no-repeat center 37px;
+    }
+    
+    &__sub-text--money {
+      background: url(../img/icon-dollar.svg) no-repeat center 37px;
+    }
+    
+    &__sub-text--nerves {
+      background: url(../img/icon-face.svg) no-repeat center 37px;
+    }
+  
+    &__sub-text--side {
+      padding: 43px 10px;
+      align-items: flex-start;
+    }
+  
+    &__main-text {
+      font-size: 36px;
+    }
+  
+    &__text {
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .table {
+    &__cell {
+      width: 33%; 
+      margin-bottom: 20px;
+    }
+
+    &__cell:nth-child(4n - 3) {
+      border-right: 1px solid transparent;
+      text-align: center;
+    }
+
+    &__main-text {
+      width: 100%;
+      padding: 23px 10px;
+      text-align: center;
+    }
+
+    &__sub-text {
+      border-bottom: 1px solid $color-red;
+    }
+
+    &__sub-text--side {
+      width: 100%;
+      padding: 23px 10px;
+      justify-content: center;
+      border-bottom: none;
+      // padding: 43px 10px;
+      // align-items: flex-start;
+    }
+
+    &__text {
+      padding: 23px 10px;
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .table {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    &__cell {
+      width: 100%; 
+      margin-bottom: 10px;      
+    }
+
+    &__sub-text {
+      height: 60px;
+      padding: 10px 10px 10px 60px;
+      margin-bottom: 20px;
+      border-bottom: none;
+    }
+
+    &__sub-text--side {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      padding-left: 0;   
+      justify-content: center;
+    }
+
+    &__sub-text--time {
+      background: url(../img/icon-clock-small.svg) no-repeat 17% center;
+    }
+    
+    &__sub-text--money {
+      background: url(../img/icon-dollar-small.svg) no-repeat 17% center;
+    }
+    
+    &__sub-text--nerves {
+      background: url(../img/icon-face-small.svg) no-repeat 17% center;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      position: relative;
+      padding-left: 26px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    &__text::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 0;
+      height: 4px;
+      width: 16px;
+      background-color: $color-red;
+      z-index: 100;
+    }
+  }
+}
