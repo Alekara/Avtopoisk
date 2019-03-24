@@ -1,6 +1,8 @@
 .service {
   display: flex;
   min-height: 793px;
+  margin: 0 auto;
+  max-width: 1920px;
 
   &__menu {
     width: 493px;
@@ -35,6 +37,7 @@
   }
 
   &__description {
+    width: 100%;
     padding: 51px 103px;
   }
 

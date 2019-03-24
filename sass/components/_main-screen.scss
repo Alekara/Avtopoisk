@@ -62,8 +62,9 @@
   }
 
   &__button {
-    width: 370px;
-    height: 44px;
+    width: 380px;
+    height: 50px;
+    padding: 12px 26px 14px;  
     border-radius: 22px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     background: #211F1F;
@@ -74,6 +75,7 @@
     text-transform: uppercase;
     border: 2px solid $color-red;
     transition: all .5s ease;
+    text-decoration: none;
   }
 
   &__button:hover {
@@ -126,15 +128,15 @@
       margin-bottom: 24px;
     }
 
+    &__button {
+      width: 345px;
+    }
+
   }
 }
 
 @media (max-width: 767px) {
   .main-screen {
-    // // height: 100vh;
-    // padding-left: 20px;
-    // padding-right: 20px;
-
     &__title {
       font-size: 44px;
       letter-spacing: 0.08em;
@@ -142,9 +144,7 @@
     }
 
     &__sub {
-    //   font-size: 16px;
       text-align: center;
-    //   order: 0;
       margin-bottom: 10px;
     }
 
@@ -159,7 +159,7 @@
     }
 
     &__button {
-      width: 330px;
+      width: 342px;
       margin: 0 auto;
     }
   }
@@ -179,12 +179,17 @@
     &__br {
       display: block;
     }
+
+    &__button {
+      width: 307px;
+      height: auto;
+      font-size: 14px;
+    }
   }
 }
 
 @media (max-width: 460px) {
   .main-screen {
-    // height: 100vh;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -196,7 +201,6 @@
     &__sub {
       font-size: 22px;
       letter-spacing: 0.08em;
-      // order: 0;
     }
 
     &__list {
@@ -212,11 +216,6 @@
     &__item::before {
       top: 8px;
       width: 16px;
-    }
-
-    &__button {
-      width: 275px;
-      font-size: 14px;
     }
 
   }
@@ -235,8 +234,9 @@
     }
 
     &__button {
-      width: 270px;
-      font-size: 13px;
+      width: 260px;
+      padding: 10px 20px 12px;
+      font-size: 12px;
     }
   }
 }

@@ -382,6 +382,7 @@
 
 @media (max-width: 767px) {
   .importance {
+    padding-top: $section-padding-top-small;
     &__heading {
       padding-left: 20px;
       padding-right: 20px;
