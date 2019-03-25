@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(to right, rgba(29, 28, 28, .8) 34%, transparent 34%),
-    url(../img/main-screen.jpg) no-repeat 65% bottom;
+    url(../img1/main-screen.jpg) no-repeat 65% bottom;
   background-size: cover;
   color: #FFFFFF;
 
@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 1375px) {
+@media (max-width: 1365px) {
   .main-screen {
     padding-left: 70px;
 
