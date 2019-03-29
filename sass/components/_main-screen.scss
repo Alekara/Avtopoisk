@@ -1,7 +1,6 @@
 .main-screen {
   height: 100vh;
   padding-left: 88px;
-  // margin-bottom: $section-margin-bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,6 +88,25 @@
   &__br {
     display: none;
   }
+
+  &__scroll {
+    width: 28px;
+    height: 153px;
+    position: absolute;
+    bottom: 40px;
+    right: 6%;
+    border: none;
+    background: url(../img/scroll.svg);
+    transition: all .5s ease-out;
+  }
+
+  &__scroll:hover {
+    transform: scale(1.1);
+  }
+
+  &__scroll:focus {
+    outline: none;
+  }
 }
 
 @media (max-width: 1365px) {
@@ -130,6 +148,10 @@
 
     &__button {
       width: 345px;
+    }
+
+    &__scroll {
+      display: none;
     }
 
   }
