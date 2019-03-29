@@ -12,9 +12,17 @@ var currentTestimonial = 0;
 var readMore = document.querySelector(".testimonials__button");
 
 //КНОПКИ
+// menuToggle.addEventListener("click", function () {
+//   document.querySelector(".navigation__list").classList.toggle("navigation__list--hidden");
+//   document.querySelector(".navigation__logo").classList.toggle("navigation__logo--hidden");
+//   document.querySelector(".navigation").classList.toggle("navigation--hidden");
+//   menuToggle.classList.toggle("navigation__toggle--menu-opened");
+//   document.querySelector(".navigation__icon").classList.toggle("navigation__icon--cross");
+// });
+
 menuToggle.addEventListener("click", function () {
   document.querySelector(".navigation__list").classList.toggle("navigation__list--hidden");
-  document.querySelector(".navigation__logo").classList.toggle("navigation__logo--hidden");
+  document.querySelector(".header__logo").classList.toggle("header__logo--hidden");
   document.querySelector(".navigation").classList.toggle("navigation--hidden");
   menuToggle.classList.toggle("navigation__toggle--menu-opened");
   document.querySelector(".navigation__icon").classList.toggle("navigation__icon--cross");
