@@ -12,8 +12,8 @@
 
   &__item {
     width: 1000px;
-    height: 600px;
-    padding: 55px 46px;
+    height: 490px;
+    padding: 45px 36px;
     margin: 0 auto;
     flex-shrink: 0;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.18);
@@ -60,7 +60,7 @@
   .testimonials {
     &__item {
       width: 900px;
-      height: 650px;
+      height: 550px;
       padding: 55px 46px;
     }
   }
@@ -76,7 +76,7 @@
 
     &__item {
       width: 730px;
-      padding: 55px 46px;
+      padding: 50px 40px;
     }
   }
 }

@@ -1847,8 +1847,8 @@ input[type="radio"].visually-hidden {
     list-style: none; }
   .testimonials__item {
     width: 1000px;
-    height: 600px;
-    padding: 55px 46px;
+    height: 490px;
+    padding: 45px 36px;
     margin: 0 auto;
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -1878,7 +1878,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 1375px) {
   .testimonials__item {
     width: 900px;
-    height: 650px;
+    height: 550px;
     padding: 55px 46px; } }
 @media (max-width: 1023px) {
   .testimonials {
@@ -1887,7 +1887,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 50px; }
     .testimonials__item {
       width: 730px;
-      padding: 55px 46px; } }
+      padding: 50px 40px; } }
 @media (max-width: 1023px) {
   .testimonials__navigation {
     display: none; }
