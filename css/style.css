@@ -62,7 +62,8 @@ input[type="radio"].visually-hidden {
     font-size: 26px; } }
 .benefits {
   padding-top: 120px;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  position: relative; }
   .benefits__heading {
     margin-bottom: 40px; }
   .benefits__list {
@@ -620,7 +621,8 @@ input[type="radio"].visually-hidden {
 .goal {
   padding-top: 120px;
   padding-left: 6%;
-  padding-right: 6%; }
+  padding-right: 6%;
+  position: relative; }
   .goal__table {
     border-collapse: collapse; }
 
@@ -1004,9 +1006,11 @@ input[type="radio"].visually-hidden {
     bottom: 40px;
     right: 6%;
     border: none;
-    background: url(../img/scroll.svg);
+    background: url(../img/scroll.svg), #000;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out; }
+  .main-screen__scroll--1 {
+    top: 20px; }
   .main-screen__scroll:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
