@@ -216,7 +216,7 @@ input[type="radio"].visually-hidden {
     left: -10px;
     height: 4px;
     width: 16px;
-    background-color: #D10000; }
+    background-color: #d10000; }
 
 @media (max-width: 1375px) {
   .case {
@@ -331,7 +331,7 @@ input[type="radio"].visually-hidden {
   padding: 16px 37px 10px;
   margin: 0 auto;
   display: block;
-  background-color: #D10000;
+  background-color: #d10000;
   -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
   border-radius: 38px;
@@ -550,7 +550,7 @@ input[type="radio"].visually-hidden {
     border: none; }
   .form__input:focus {
     outline: none;
-    border: 1px solid #D10000; }
+    border: 1px solid #d10000; }
   .form__input--name {
     background: url(../img/profile.svg) no-repeat 45px center, #fff; }
   .form__input--tel {
@@ -653,7 +653,7 @@ input[type="radio"].visually-hidden {
   .importance__decoration {
     width: 2px;
     height: 610px;
-    background-color: #D10000;
+    background-color: #d10000;
     position: absolute;
     left: 50%;
     top: 268px; }
@@ -666,10 +666,10 @@ input[type="radio"].visually-hidden {
     height: 40px;
     left: -19px;
     background: #FFFFFF;
-    border: 2px solid #D10000;
+    border: 2px solid #d10000;
     border-radius: 50%; }
   .importance__circle:hover {
-    background: #D10000; }
+    background: #d10000; }
   .importance__circle--1 {
     top: 63px; }
   .importance__circle--1::after, .importance__circle--3::after {
@@ -679,7 +679,7 @@ input[type="radio"].visually-hidden {
     height: 2px;
     top: calc(50% - 1px);
     left: -160px;
-    background-color: #D10000; }
+    background-color: #d10000; }
   .importance__circle--5::after, .importance__circle--7::after {
     position: absolute;
     content: "";
@@ -697,7 +697,7 @@ input[type="radio"].visually-hidden {
     height: 2px;
     top: calc(50% - 1px);
     right: -160px;
-    background-color: #D10000; }
+    background-color: #d10000; }
   .importance__circle--3 {
     top: 359px; }
   .importance__circle--4 {
@@ -869,7 +869,7 @@ input[type="radio"].visually-hidden {
       left: -10px;
       height: 4px;
       width: 26px;
-      background-color: #D10000; }
+      background-color: #d10000; }
     .importance__item--2:nth-child(2n) {
       margin-left: 0; }
     .importance__text {
@@ -972,7 +972,7 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
     z-index: 100; }
   .main-screen__item:hover::before {
-    background-color: #D10000; }
+    background-color: #d10000; }
   .main-screen__button {
     width: 380px;
     height: 50px;
@@ -986,7 +986,7 @@ input[type="radio"].visually-hidden {
     font-weight: 900;
     letter-spacing: 0.17em;
     text-transform: uppercase;
-    border: 2px solid #D10000;
+    border: 2px solid #d10000;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     text-decoration: none; }
@@ -994,7 +994,7 @@ input[type="radio"].visually-hidden {
     -webkit-transform: scale(1.03);
             transform: scale(1.03); }
   .main-screen__focus {
-    color: #D10000; }
+    color: #d10000; }
   .main-screen__br {
     display: none; }
 
@@ -1115,7 +1115,7 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     color: #fff; }
   .navigation__link:hover, .navigation__link:focus {
-    color: #D10000; }
+    color: #d10000; }
 
 @media (min-width: 2000px) {
   .navigation {
@@ -1286,7 +1286,7 @@ input[type="radio"].visually-hidden {
     line-height: normal;
     font-size: 36px;
     letter-spacing: 0.08em;
-    color: #D10000; }
+    color: #d10000; }
   .service__base--inspect2, .service__base--inspect3, .service__base--select2, .service__base--select3, .service__base--expert2, .service__base--expert3 {
     display: none; }
   .service__text {
@@ -1321,7 +1321,7 @@ input[type="radio"].visually-hidden {
   .service__item:last-child {
     margin-bottom: 0; }
   .service__item:hover {
-    color: #D10000; }
+    color: #d10000; }
   .service__point::before {
     display: block;
     content: "";
@@ -1330,7 +1330,7 @@ input[type="radio"].visually-hidden {
     left: -54px;
     height: 4px;
     width: 26px;
-    background-color: #D10000;
+    background-color: #d10000;
     z-index: 100; }
   .service__point--right::before {
     display: none; }
@@ -1342,7 +1342,7 @@ input[type="radio"].visually-hidden {
     right: -54px;
     height: 4px;
     width: 26px;
-    background-color: #D10000;
+    background-color: #d10000;
     z-index: 100; }
   .service__number {
     font-family: "Montserrat", sans-serif;
@@ -1368,8 +1368,8 @@ input[type="radio"].visually-hidden {
   .service__link:focus {
     outline: none; }
   .service__item:hover .service__link {
-    color: #D10000;
-    border-bottom: 4px solid #D10000; }
+    color: #d10000;
+    border-bottom: 4px solid #d10000; }
   .service__price {
     display: block;
     margin-bottom: 50px;
@@ -1482,7 +1482,7 @@ input[type="radio"].visually-hidden {
       color: #383838;
       border-top: 2px solid #383838; }
     .service__item:hover .service__link {
-      color: #D10000;
+      color: #d10000;
       border-bottom: none; }
     .service__link {
       padding: 0;
@@ -1604,7 +1604,7 @@ input[type="radio"].visually-hidden {
     padding: 43px 10px;
     border: 1px solid transparent; }
   .table__cell:nth-child(4n - 3) {
-    border-right: 1px solid #D10000;
+    border-right: 1px solid #d10000;
     text-align: left; }
   .table__main-text--big {
     font-size: 64px; }
@@ -1630,7 +1630,7 @@ input[type="radio"].visually-hidden {
   .table__sub-text--nerves {
     background: url(../img/icon-face.svg) no-repeat center 67px; }
   .table__main-text {
-    color: #D10000;
+    color: #d10000;
     font-size: 48px;
     font-weight: 900;
     line-height: normal; }
@@ -1680,7 +1680,7 @@ input[type="radio"].visually-hidden {
     padding: 23px 10px;
     text-align: center; }
   .table__sub-text {
-    border-bottom: 1px solid #D10000; }
+    border-bottom: 1px solid #d10000; }
   .table__sub-text--side {
     width: 100%;
     padding: 23px 10px;
@@ -1741,7 +1741,7 @@ input[type="radio"].visually-hidden {
       left: 0;
       height: 4px;
       width: 16px;
-      background-color: #D10000;
+      background-color: #d10000;
       z-index: 100; } }
 .report {
   padding: 120px 93px 0; }
@@ -1877,7 +1877,7 @@ input[type="radio"].visually-hidden {
     border: none;
     margin: 0 auto;
     background: transparent;
-    color: #D10000;
+    color: #d10000;
     font-size: 18px;
     line-height: normal;
     text-decoration: underline; } }

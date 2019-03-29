@@ -158,3 +158,39 @@ document.querySelector(".service__item--33").addEventListener("click", function 
   document.querySelector(".service__item--33").classList.add("service__item--active");
 });
 
+
+//ПОДСВЕТКА КРУЖОЧКОВ
+document.querySelector(".importance__item--mask").addEventListener("mouseover", function () {
+  document.querySelector(".importance__circle--1").style.background = "#d10000";
+});
+
+document.querySelector(".importance__item--mask").addEventListener("mouseout", function () {
+  document.querySelector(".importance__circle--1").style.background = "#fff";
+}); 
+
+document.querySelector(".importance__item--crush").addEventListener("mouseover", function () {
+  document.querySelector(".importance__circle--2").style.background = "#d10000";
+});
+
+document.querySelector(".importance__item--crush").addEventListener("mouseout", function () {
+  document.querySelector(".importance__circle--2").style.background = "#fff";
+}); 
+
+document.querySelector(".importance__item--money").addEventListener("mouseover", function () {
+  document.querySelector(".importance__circle--3").style.background = "#d10000";
+});
+
+document.querySelector(".importance__item--money").addEventListener("mouseout", function () {
+  document.querySelector(".importance__circle--3").style.background = "#fff";
+}); 
+
+document.querySelector(".importance__item--tools").addEventListener("mouseover", function () {
+  document.querySelector(".importance__circle--4").style.background = "#d10000";
+});
+
+document.querySelector(".importance__item--tools").addEventListener("mouseout", function () {
+  document.querySelector(".importance__circle--4").style.background = "#fff";
+}); 
+
+
+
