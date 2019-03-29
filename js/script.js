@@ -193,4 +193,11 @@ document.querySelector(".importance__item--tools").addEventListener("mouseout", 
 }); 
 
 
+//ПОПАП
+document.querySelector(".popup__close").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "none";
+});
+
+
+
 

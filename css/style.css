@@ -2021,10 +2021,40 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0;
     margin-left: 0;
     text-align: center; }
-  .popup__cross {
+  .popup__close {
+    width: 35px;
+    height: 35px;
+    padding: 1px;
     position: absolute;
-    right: 20px;
-    top: 20px; }
+    right: 5px;
+    top: 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent; }
+  .popup__cross {
+    position: relative; }
+  .popup__cross::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(29, 28, 28, 0.9);
+    top: calc(50%-5px);
+    right: calc(50%-5px);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .popup__cross::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(29, 28, 28, 0.9);
+    top: calc(50%-5px);
+    right: calc(50%-5px);
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
 
 @media (max-width: 1023px) {
   .popup {
