@@ -65,6 +65,31 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.move-up {
+  position: fixed;
+  bottom: 90px;
+  right: 40px;
+  z-index: 900;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  background: rgba(245, 245, 245, .4);
+  color: $color-red;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+.move-up:hover {
+  background: #e9ebec;
+}
+
+.move-up-show {
+  display: block;
+}
+
 // @media (min-width: 2000px) {
 //   .container {
 //     display: block;

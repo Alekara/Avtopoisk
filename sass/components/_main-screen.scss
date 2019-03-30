@@ -96,12 +96,8 @@
     bottom: 40px;
     right: 6%;
     border: none;
-    background: url(../img/scroll.svg), #000;
+    background: url(../img/scroll.svg);
     transition: all .5s ease-out;
-  }
-
-  &__scroll--1 {
-    top: 20px;
   }
 
   &__scroll:hover {

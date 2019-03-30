@@ -22,7 +22,7 @@ var readMore = document.querySelector(".testimonials__button");
 
 menuToggle.addEventListener("click", function () {
   document.querySelector(".navigation__list").classList.toggle("navigation__list--hidden");
-  document.querySelector(".header__logo").classList.toggle("header__logo--hidden");
+  document.querySelector(".navigation__logo").classList.toggle("navigation__logo--hidden");
   document.querySelector(".navigation").classList.toggle("navigation--hidden");
   menuToggle.classList.toggle("navigation__toggle--menu-opened");
   document.querySelector(".navigation__icon").classList.toggle("navigation__icon--cross");
@@ -205,6 +205,32 @@ document.querySelector(".importance__item--tools").addEventListener("mouseout", 
 document.querySelector(".popup__close").addEventListener("click", function () {
   document.querySelector(".popup").style.display = "none";
 });
+
+
+//КНОПКА ВВЕРХ
+var goTopBtn = document.querySelector('.move-up');
+
+window.addEventListener('scroll', trackScroll);
+goTopBtn.addEventListener('click', backToTop);
+
+function trackScroll() {
+  var scrolled = window.pageYOffset;
+  var coords = document.documentElement.clientHeight;
+
+  if (scrolled > coords) {
+    goTopBtn.classList.add('move-up-show');
+  }
+  if (scrolled < coords) {
+    goTopBtn.classList.remove('move-up-show');
+  }
+}
+
+function backToTop() {
+  if (window.pageYOffset > 0) {
+    window.scrollBy(0, -80);
+    setTimeout(backToTop, 0);
+  }
+}
 
 
 

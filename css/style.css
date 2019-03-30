@@ -43,6 +43,28 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.move-up {
+  position: fixed;
+  bottom: 90px;
+  right: 40px;
+  z-index: 900;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  background: rgba(245, 245, 245, 0.4);
+  color: #d10000;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none; }
+
+.move-up:hover {
+  background: #e9ebec; }
+
+.move-up-show {
+  display: block; }
+
 @media (max-width: 1023px) {
   body {
     font-size: 16px;
@@ -1006,11 +1028,9 @@ input[type="radio"].visually-hidden {
     bottom: 40px;
     right: 6%;
     border: none;
-    background: url(../img/scroll.svg), #000;
+    background: url(../img/scroll.svg);
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out; }
-  .main-screen__scroll--1 {
-    top: 20px; }
   .main-screen__scroll:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
